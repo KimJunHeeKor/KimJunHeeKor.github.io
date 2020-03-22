@@ -1,3 +1,7 @@
+---
+title: "Welcome to Jekyll!"
+categories: jekyll update
+---
 # 파이썬 언어
 
 <br><br>
