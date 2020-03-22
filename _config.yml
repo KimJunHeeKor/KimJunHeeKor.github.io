@@ -93,11 +93,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Kim Jun Hee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am seeking for getting better than me in the past by electronics, electircal enginnering and coder."
+  location         : "Seoul, South Korea"
+  email            : "KimJunHeeKor@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
