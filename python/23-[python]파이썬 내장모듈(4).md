@@ -1,0 +1,123 @@
+# 파이썬 내장모듈(4)
+
+## 1. 메일 발송 모듈 만들기
+- 메일 발송시 상황에 따라 변경해야 하는 조건값들은 "발송주소", "수신주소", "제목", "내용", "첨부파일"이다.
+
+- 위 정보들을 파라미터로 하는 함수를 정의하면 이 후 같은 기능이 필요할 때마다 코드를 재사용할 수 있다.
+```python
+# helper.py(메일 발송 모듈 작성)
+
+import os.path
+from smtplib import SMTP
+from email.mime.text import MIMEText
+from email.mime.application import MIMEApplication
+from email.mime.multipart import MIMEMultipart
+
+#메일 발송 함수 정의
+def sendmail(from_addr, to_addr, subject, content, files=[]):
+	#--------------
+	#발송정보 설정
+	#----------
+
+	content_type="html"
+	username = 'xxxxxx'
+	password = 'xxxxxx'
+	smtp='smtp.gmail.com'
+	port = 587
+
+	#--------
+	#발송정보 구성
+	#--------
+	msg =MIMEMultipart()
+	msg['Subject'] = subject
+	msg['From']=from_addr
+	msg['To'] = to_addr
+
+	#본문 설정
+	msg.attach(MIMEText(content, content_type))
+
+	#--------
+	#파일 첨부
+	#--------
+	if files:
+		for f in files:
+			with open(f,'rb') as a_file:
+				basename = os.path.basename(f)
+				part=MIMEApplication(a_file.read(), Name=basename)
+
+				#파일 첨부
+				part['Content-Disposition'] = 'attachment; filename="%s"' %basename
+				msg.attach(part)
+
+	#--------
+	#메일 보내기
+	#--------
+	mail = SMTP(smtp)
+	#메일 서버 접속
+	mail.ehlo()
+	#메일 서버 연동 설정
+	mail.starttls()
+	#메일 서버 로그인
+	mail.login(username, password)
+	#메일 보내기
+	mail.sendmail(from_addr, to_addr,msg.as_string())
+	#메일 서버 접속 종료
+	mail.quit()
+```
+
+<br><br>
+
+## 2. 그룹 메일 발송하기
+
+- 기능 구현을 위한 모듈 참조와 구현 절차 확인 
+
+    (csv파일에 수신자이름, 수신자 메일주소, 모든 사람에게 공통적으로 전달될 첨부파일 경로, 개별적으로 전달될 파일 경로를 명시한다.)
+```python
+#메일 발송 모듈 사용
+from helper import sendmail
+
+import datetime as dt
+# 이번년도와 정보 준비하기
+now_time = dt.datetime.now()
+now_year = now_time.year
+now_month = now_time.month
+
+# 발송자 주소, 메일 제목
+from_addr = "sadf@gmail.com"
+subject_tpl = '{name}님의 {yy}년 {mm}월 급여명세서 입니다.'
+
+# 메일 본문은 HTML 파일 읽기
+with open("mail/content.html", "r", encoding='utf-8') as f:
+	content_tpl=f.read()
+	print(content_tpl)
+
+# 수신자 목록에 대한 CSV 파일 읽기
+with open("mail/mail_list.csv", "r", encoding='euc-kr') as f:
+	csv_data=f.readlines()
+	count = len(csv_data)
+
+	#결과 출력을 위한 문자열 템플릿
+	result_tpl="{0}/{1} >> {2}({3})님께 메일을 발송했습니다."
+
+	#리스트 행 수 만큼 반복 -> i 에는 인덱스, line은 한 행의 문자열이 저장됨.
+	for i, line in enumerate(csv_data):
+		#line="학생, hello@gamil.com, mail/document.pptx, mail/pay1.xlsx"
+		item = line.strip().split(",")
+		to_name=item[0].strip()
+		to_addr =item[1].strip()
+		file1 = item[2].strip()
+		file2 = item[3].strip()
+
+		#제목과 내용에 포함된 {이름} 형식의 치환자에 변수값 적용
+		#-> "{name}님의 {yy}년 {mm}월 급여명세서 입니다."
+		subject = subject_tpl.format(name=to_name, yy=now_year, mm=now_month)
+		content = content_tpl.format(name=to_name, yy=now_year, mm=now_month)
+
+		#메일을 발송한다.
+		sendmail(from_addr, to_addr, subject, content, [file1, file2])
+
+		#결과 출력
+		print(result_tpl.format(i+1, count, to_name, to_addr))
+```
+
+참조: (https://blog.itpaper.co.kr/)의 교육자료

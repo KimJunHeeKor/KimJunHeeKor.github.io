@@ -1,0 +1,202 @@
+# 딕셔너리(Dictionary)
+
+## 1. Dictionary 자료형의 기본 형식
+
+### 1) Dictionary data 만들기
+중괄호(`{}`) 안에 리스트나 튜플과 같이 콤마(`,`)로 구별하여 여러 개의 값을 `"이름 : 값"`의 형태로 나열한다.
+```python
+{"이름" : "값", "이름", "값", ... , "이름": "값" }
+```
+
+- 리스트를 포함하는 Dictionary
+```python
+{"이름" : ["값0", "값1", "값2"]}
+```
+
+대개 "이름"은 key, "값"을 value라고 말한다.
+그래서 Dictionar는 key와 value의 쌍으로 구성된 자료구조라고 한다.
+
+다른 프로그래밍 언어에서는 JSON(JavaScript Object Notation)이라고 부른다.
+
+```python
+#Dictionary 정의
+dic = {"name":"철수", "phone":"010-1234-5678", "birth":"0115"}
+print(dic)  #{"name":"철수", "phone":"010-1234-5678", "birth":"0115"}
+
+# 특정 요소에 접근
+print(dic["name"])      #철수
+
+# 특정 요소 값을 변경
+dic["name"] = "호영"    
+print(dic["name"])      #호영
+
+#존재하지 않는 key의 value를 가져올 수 없음
+# print(dic["weight"])      >>에러
+
+# 존재하지 않는 key에 value를 할당하면 Dictionary가 확장됨.
+dic["height"] = 175
+print(dic)  #{'name': '호영', 'phone': '010-1234-5678', 'birth': '0115', 'height': 175}
+
+# key 삭제
+del(dic["birth"])
+print(dic)  #{'name': '호영', 'phone': '010-1234-5678', 'height': 175}
+```
+
+<br>
+
+### 2) Dictionary key의 특성
+1. key가 중복될 경우 하나를 제외한 나머지는 무시됨.
+```python
+data={"msg":"hello", "msg":"world", "msg":"python"}
+print(data['msg'])      #python
+```
+
+2. Dictionary는 리스트와 다르게 자료의 순서가 중요하지 않음.
+```python
+rank = {0:"python", 30:"R", 10:"java"}
+print(rank[0])      #python
+print(rank[30])     #R
+print(rank[10])     #java
+```
+
+<br><br>
+
+## 2. Dictionary 계층 구조
+
+### 1) Dictionary를 포함하는 Dictionary
+Dictionary data의 각 항목은 데이터 형식의 제한이 없기 때문에 항목의 값을 Dictionary로 할당할 수 있다.
+```python
+{
+    "key":{"key":value, "key":value},
+    "key":{"key":value, "key":value}
+}
+```
+<br>
+
+### 2) 리스트를 포함하는 Dictionary
+
+하나의 key 안에 리스트로 데이터로 포함할 수 있다.
+```python
+{"key":["list", "tuple", "dictionary"]}
+```
+
+<br>
+
+### 3) 리스트와 Dictionary가 혼용된 value를 갖는 Dictionary
+
+- Dictionary의 value를 리스트로 구성하고 그 리스트의 요소를 Dictionary로 구성
+```
+{   "python":[
+    {"name":"java", "desc":"프로그래밍 기본"},
+    {"name":"JSP", "desc":"웹 프로그래밍"},
+    {"name":"Android", "desc":"모바일 개발"}
+]}
+```
+
+#### 예시 코드
+```python
+# Dictionary는 리스트나 Dictionary를 포함할 수 있다.
+addr = ["서울", "서초구", "강남대로"]
+grade = {"korean":98, "math":77, "english":82}
+
+member = {
+    "userid" : "python",    #문자열 데이터
+    "age":20,               #정수형 데이터
+    "addr": addr,           #리스트 데이터
+    "grade": grade          #Dictionary 데이터
+}
+
+print(member)
+#{'userid': 'python', 'age': 20, 'addr': ['서울', '서초구', '강남대로'], 'grade': {'korean': 98, 'math': 77, 'english': 82}}
+
+print(member["addr"][0])            #서울
+print(member["grade"]["korean"])    #98
+
+#Dictionary 계층을 직접 표현
+mydic={
+    'total' : 1962,
+    'city' : ["서울", "대전", "광주"],
+    'population' : [987,654, 321],
+    'date' : {'yy':2018, 'mm':9, 'dd':10}
+}
+
+print(mydic)
+"""
+{
+    'total' : 1962,
+    'city' : ["서울", "대전", "광주"],
+    'population' : [987,654, 321],
+    'date' : {'yy':2018, 'mm':9, 'dd':10}
+}
+"""
+print(mydic['city'][0])             #서울
+print(mydic['population'][0])       #987
+print(mydic['date']['yy'])          #2018
+
+#리스트의 요소가 Dictionary가 되는 경우
+grade = [
+    {'name':'철수', 'kor' : 95, 'eng':88},
+    {'name':'영희', 'kor' : 92, 'eng':90},
+    {'name':'철민', 'kor' : 88, 'eng':76}
+]
+
+tpl = "{0}의 국어점수: {1}, 영어점수: {2}"
+print(tpl.format(grade[0]["name"], grade[0]["kor"], grade[0]["eng"]))  #철수의 국어점수: 95, 영어점수: 88
+print(tpl.format(grade[1]["name"], grade[1]["kor"], grade[1]["eng"]))  #영희의 국어점수: 92, 영어점수: 90
+print(tpl.format(grade[2]["name"], grade[2]["kor"], grade[2]["eng"]))  #철민의 국어점수: 88, 영어점수: 76
+```
+
+<br><br>
+
+## 3. Dictionary 관련 함수
+### 1) get() : 특정 key에 대응하는 값 얻기
+```python
+dic = {'name' : '철수', 'phone': '010-1234-5678', 'birth':'0115'}
+print(dic.get('name'))      #철수
+
+# 존재하지 않는 key에 접근할 경우
+print(dic.get('gender'))    #None (반환값이 None)
+
+#key가 존재하지 않지만 반환값을 설정할 경우
+print(dic.get('gender', '남자'))        #남자
+```
+<br>
+
+### 2) keys() : key값을 모아서 반환
+```python
+dic = {'name' : '철수', 'phone': '010-1234-5678', 'birth':'0115'}
+keys=dic.keys()
+print(keys)     #dict_keys(['name', 'phone', 'birth'])
+
+
+#dict_keys를 list로 변환
+key_list = list(keys)
+print(key_list)     #['name', 'phone', 'birth']
+```
+<br>
+
+### 3) values() : value만을 모아서 반환
+```python
+dic = {'name' : '철수', 'phone': '010-1234-5678', 'birth':'0115'}
+values = dic.values()
+print(values)       #dict_values(['철수', '010-1234-5678', '0115'])
+
+
+#dic_values를 list로 변환
+value_list = list(values)
+print(value_list)       #['철수', '010-1234-5678', '0115']
+```
+<br>
+
+### 4) items() : key-value를 묶은 tuple들의 모음을 반환
+```python
+dic = {'name' : '철수', 'phone': '010-1234-5678', 'birth':'0115'}
+items = dic.items()
+print(items)        #dict_items([('name', '철수'), ('phone', '010-1234-5678'), ('birth', '0115')])
+
+#dict_items를 list로 변환
+lists = list(items)
+print(lists)    #[('name', '철수'), ('phone', '010-1234-5678'), ('birth', '0115')]
+```
+
+참조: (https://blog.itpaper.co.kr/)의 교육자료
