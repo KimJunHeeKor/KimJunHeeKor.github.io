@@ -24,7 +24,7 @@ description              : "An amazing website."
 url                      : "https://KimJunHeeKor.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/teaser_jpg.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/Images/teaser_jpg.jpg" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -93,11 +93,11 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Kim Jun Hee"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "I am seeking for getting better than me in the past by electronics, electircal enginnering and coder."
+  location         : "Seoul, South Korea"
+  email            : "KimJunHeeKor@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
