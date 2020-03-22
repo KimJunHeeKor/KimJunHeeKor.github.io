@@ -1,40 +1,42 @@
 ---
-title:  "블로그 첫 글"
-date: 2018-11-30
-categories: ['일반']
-tags: ['블로그', 'jekyll', 'github', 'github.io']
+title:  "[파이썬] 파이썬 확장모듈(Numpy)"
+date: 2020-03-22
+categories: ['python']
+tags: ['python', '파이썬']
 ---
-
-# 파이썬 확장모듈(Numpy)
-
 ## 1. 파이썬 확장모듈
+
 - 오픈 소스 형태의 파이썬 확장 모듈
+
     (https://pypi.org/)모듈저장소에는 파이썬의 오픈소스 모듈들이 등록되어 있다. 이를 설치해서 사용할 수 있다.
 
-### 1)확장 모듈설치
+### 1) 확장 모듈설치
 
 - 확장 모듈 설치를 위한 pip 명령어 사용
 
     파이썬에는 모듈 저장소로부터 필요한 모듈을 내려 받아 설치를 수행하는 `pip 명령어`가 포함되어 있다.
 
 - `pip 명령어` 업데이트 하기
+
     명령 프롬프트 상에서 다음의 명령어를 수행하여 pip를 최신버전으로 업데이트 한다. 이 명령은 최초 1회만 수행된다.
+
     ```cmd
     python.exe -m pip install --upgrade pip
     ```
 <br>
 
 - 필요한 모듈 설치하기 (pip대신 pip3 명령어 사용 @ Mac)
+
     ```
     pip install 모듈이름
     ```
 <br>
 
 - 특정 모듈 삭제하기 (pip대신 pip3 명령어 사용 @ Mac)
+
     ```
     pip uninstall -y 모듈이름
     ```
-
 <br><br>
 
 ## 2. Numpy 모듈 소개
@@ -52,18 +54,19 @@ tags: ['블로그', 'jekyll', 'github', 'github.io']
 6. Numpy 자체만으로도 난수생성, 행렬연산, 간단한 기술통계 분석 정도가 가능하지만 **실제로는 `Pandas`(데이터 분석 모듈), `matplotlib`(그래프 모듈) 등 다른 python 패키지와 함께 쓰이는 경우가 많다.**
 
 7. 파이썬으로 수치해석, 통계 관련 기능을 구현할때 Numpy는 가장 기본이 되는 모듈이다. 그 만큼 Numpy는 수치해석/ 통계 관련 작업시 중요한 역할을 한다.
-
 <br><br>
 
 ## 3. Numpy 모듈 설치
 
 - 명령프롬프트에 pip 명령어를 통해 numpy 모듈을 설치한다.
+
 ```cmd
 pip install numpy
 ```
 <br><br>
 
 ## 4.Numpy 모듈 기능
+
 - Numpy 모듈을 이용한 배열 생성
 
 ```python
@@ -109,6 +112,7 @@ for i, v in enumerate(arr):
 <br>
 
 - numpy 배열의 특성
+
 ```python
 #모듈 가져오기
 import numpy
@@ -209,6 +213,7 @@ print(h)
 <br><br>
 
 ## 5. Numpy 배열 연산
+
 - numpy 배열의 기초 통계값
 
 ```python
@@ -247,6 +252,7 @@ print("최대값 : %d, 최소값 : %d" %(s3,s4))
 <br>
 
 - numpy 배열의 각 요소의 연산
+
 ```python
 #모듈 가져오기
 import numpy
@@ -268,6 +274,7 @@ print(new2)
 <br>
 
 - numpy 배열간의 연산(1)
+
 ```python
 #모듈 가져오기
 import numpy
@@ -309,6 +316,7 @@ print(d)
 <br>
 
 - numpy 배열간의 연산(2)
+
 ```python
 #모듈 가져오기
 import numpy
@@ -345,7 +353,9 @@ print(h)
 <br><br>
 
 ## 6. Numpy 배열의 index와 slicing
+
 - 배열의 기본 index, slicing
+
 ```python
 #모듈 가져오기
 import numpy
@@ -386,6 +396,7 @@ print(grade[1:])
 <br>
 
 - 조건에 맞는 값 추출하기
+
 ```python
 #모듈 가져오기
 import numpy
@@ -425,6 +436,7 @@ print(result4)
 <br><br>
 
 ## 7. 2차원 배열
+
 - numpy 2차배열 생성 및 기본 정보 조회
 
 ```python
@@ -458,6 +470,7 @@ int32
 <br>
 
 - 기본 index과 slicing
+
 ```python
 #모듈 가져오기
 import numpy
@@ -499,6 +512,7 @@ print(grade[1:, 2:])
 <br>
 
 - 기초 통계 산출
+
 ```python
 #모듈 가져오기
 import numpy
@@ -530,6 +544,7 @@ print(s2)
 <br>
 
 - 조건에 맞는 값 추출하기
+
 ```python
 #모듈 가져오기
 import numpy
@@ -574,4 +589,4 @@ print(result4)
 [98 72 64 72 92 76]
 ```
 
-참조: (https://blog.itpaper.co.kr/)의 교육자료
+참조 : 호쌤의 교육자료, (<https://blog.itpaper.co.kr/>)
