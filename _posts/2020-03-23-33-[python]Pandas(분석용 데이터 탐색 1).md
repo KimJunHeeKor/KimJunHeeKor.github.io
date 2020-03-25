@@ -4,7 +4,7 @@ date: 2020-03-23
 categories: ['python']
 tags: ['python', '파이썬']
 ---
-## 1. Padnas
+## 1. Pandas
 
 - 데이터 분석, 처리 등을 쉽게 하도록 만들어진 파이썬 패키지이다.
 
