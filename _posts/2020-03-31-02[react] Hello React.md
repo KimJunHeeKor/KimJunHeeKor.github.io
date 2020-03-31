@@ -9,13 +9,13 @@ tags: ['React', '리액트']
 
 - 명령 프롬프트에 아래 구문을 작성
 
-```cmd
+```
 yarn create react-app 프로젝트 이름
 ```
 
 - 예시
 
-```cmd
+```
 yarn create react-app 01-hello-react
 ```
 <br>
