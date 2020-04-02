@@ -14,7 +14,7 @@ tags: ['python', '파이썬']
 
 - 명령 프롬프트에서 pip 명령어로 설치할 수 있다.
 
-```cmd
+```
 pip install pandas
 ```
 <br>
