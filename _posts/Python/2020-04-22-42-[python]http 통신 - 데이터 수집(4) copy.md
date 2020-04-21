@@ -1,8 +1,8 @@
 ---
 title:  "[파이썬] 실전 엑셀 데이터 - 데이터 수집(4)"
 date: 2020-04-22
-categories: ['python']
-tags: ['python', '파이썬']
+categories: [python]
+tags: [python, 파이썬]
 ---
 
 ## 1. URL을 통한 데이터 수집하기
