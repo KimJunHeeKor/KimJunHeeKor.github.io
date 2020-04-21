@@ -1,9 +1,11 @@
 # main links
 main:
-  - title: "Python"
-    url : /categories/
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "python"
+    url : /categories/python
+  - title: "project"
+    url :  http://itproject.ezenac.co.kr/musicstore/
+  #- title: "Quick-Start Guide"
+  #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
