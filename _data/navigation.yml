@@ -1,7 +1,12 @@
 # main links
 main:
-  - title: "python"
-    url : /category/python
+  - title: "Program Language"
+    url : /category/
+    children:
+      - title : "python"
+        url : /category/python/
+      - title : "React"
+        url : /category/React/
   - title: "project"
     url :  http://itproject.ezenac.co.kr/musicstore/
   #- title: "Quick-Start Guide"

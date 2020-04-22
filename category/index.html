@@ -1,6 +1,12 @@
 ---
-layout: default
-permalink: '/category'
+layout: archive
+permalink: '/category/'
+
+sidebar:
+  - title: "Title"
+    text: "Some text here."
+  - title: "Another Title"
+    text: "More text here."
 ---
 <ul class="posts-list">
   {% assign category = page.category | default: page.title %}
