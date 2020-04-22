@@ -1,14 +1,16 @@
 # main links
 main:
-  - title: "Program Language"
+  - title: "About"
+    url: /about
+  - title: "Study Languages"
     url : /categories/
     children:
       - title : "python"
         url : /categories/python/
       - title : "React"
         url : /categories/React/
-  - title: "project"
-    url :  http://itproject.ezenac.co.kr/musicstore/
+  - title: portfolio
+    url : /portfolio/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
@@ -19,13 +21,3 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-docs:
-  - title: "Program Language"
-    url : /categories/
-    children:
-      - title : "python"
-        url : /categories/python/
-      - title : "React"
-        url : /categories/React/
-  - title: "project"
-    url :  http://itproject.ezenac.co.kr/musicstore/
