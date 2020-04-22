@@ -1,12 +1,12 @@
 # main links
 main:
   - title: "Program Language"
-    url : /category/
+    url : /categories/
     children:
       - title : "python"
-        url : /category/python/
+        url : /categories/python/
       - title : "React"
-        url : /category/React/
+        url : /categories/React/
   - title: "project"
     url :  http://itproject.ezenac.co.kr/musicstore/
   #- title: "Quick-Start Guide"
@@ -19,3 +19,13 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+docs:
+  - title: "Program Language"
+    url : /categories/
+    children:
+      - title : "python"
+        url : /categories/python/
+      - title : "React"
+        url : /categories/React/
+  - title: "project"
+    url :  http://itproject.ezenac.co.kr/musicstore/

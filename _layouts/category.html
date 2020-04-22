@@ -1,24 +1,20 @@
 ---
-layout: default
----
+layout: archive
 
+author_profile: true
+
+sidebar:
+  nav: docs
+---
 <!-- {{ content }}
 
 <div class="entries-{{ page.entries_layout }}">
   {% include posts-category.html taxonomy=page.taxonomy type=page.entries_layout %}
 </div> -->
-<ul class="posts-list">
-  
-  {% assign category = page.category | default: page.title %}
+
+{% assign category = page.category | default: page.title %}
   {% for post in site.categories[category] %}
-    <li>
-      <h3>
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-        <small>{{ post.date | date_to_string }}</small>
-      </h3>
-    </li>
+    <div>
+              {% include archive-single.html type=page.entries_layout %} <small>{{ post.date | date_to_string }}</small>           
+    </div>
   {% endfor %}
-  
-</ul>
