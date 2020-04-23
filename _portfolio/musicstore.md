@@ -3,7 +3,7 @@ layout: collection
 collection: portfolio
 entries_layout: grid
 classes: wide
-title: "Music sotre(website)"
+title: "Music store(website)"
 excerpt: "A store for selling disks of music. I was in charged of call the records(disk) from Database and dealt with data from Database in case that shopper purchases records."
 header:
   image: /assets/Images/blog_main/musicstore/project_header.png
