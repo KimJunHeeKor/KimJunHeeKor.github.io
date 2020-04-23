@@ -1,6 +1,6 @@
 # main links
 main:
-  - title: "About"
+  - title: "About me"
     url: /about
   - title: "Study Languages"
     url : /categories/
@@ -9,7 +9,7 @@ main:
         url : /categories/python/
       - title : "React"
         url : /categories/React/
-  - title: portfolio
+  - title: Portfolio
     url : /portfolio/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
