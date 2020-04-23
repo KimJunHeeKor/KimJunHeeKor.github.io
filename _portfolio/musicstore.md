@@ -30,24 +30,31 @@ gallery:
     alt: "Admin cart page"
 ---
 
-# 1. Abstract
+<br>
+
+<h1 style="color:green;"> 1. Abstract </h1>
+---
+
 The purpose of this project is making web site to sell music albums. The webpage has features like other common shopping website such as login, logout, displayment items, purchasing the items, etc. But, this website show recommend items through several processing data. You will find the recommend side in the website if you visit it.
 
 <br>
 
-# 2. Project Period
+<h1 style="color:green;"> 2. Project Period</h1>
+---
 
 - From 2019. 11. to 2020. 04.
 
 <br><br>
 
-# 3. Project Member
+<h1 style="color:green;"> 3. Project Member </h1>
+---
 
 - Kim MinSeon, Kim JunHee, Ryu SiMyeong, Yang MinGyu, Yun JeongYeon
 
 <br><br>
 
-# 4. Development environment
+<h1 style="color:green;"> 4. Development environment</h1>
+---
 
 ## 1) Front-End
 
@@ -55,7 +62,7 @@ The purpose of this project is making web site to sell music albums. The webpage
 
 ## 2) Back-End
 
-- JAVA, MySQL, Spring, JSTL
+- JAVA, MySQL, Spring, JSTL, JSP
 
 ## 3) Web Application Server
 
@@ -73,7 +80,8 @@ The purpose of this project is making web site to sell music albums. The webpage
 
 
 
-# 5. What was charged in?
+<h1 style="color:green;"> 5. What I did</h1>
+---
 
 ## 1) Main page
 
@@ -84,7 +92,7 @@ The purpose of this project is making web site to sell music albums. The webpage
 
 ## 2) Shopping pages
 
-### #1 Cart page & Favorite page
+### [1] Cart page & Favorite page
 
 - Page design
 - Display albums by data from DB
@@ -92,7 +100,7 @@ The purpose of this project is making web site to sell music albums. The webpage
 - Data processing by Ajax
 
 
-### #2 Purchase process page, Purchase success & fail pages
+### [2] Purchase process page, Purchase success & fail pages
 
 - Page design
 - Applying address search API(Application Programming Interface), payment API for card and mobile (It is not real payment.)
@@ -110,8 +118,14 @@ The purpose of this project is making web site to sell music albums. The webpage
 - For editing data, Call data by SQL from Database
 - Featuring CRUD(Create, Read, Update, Delete)
 
+<br>
 If you want more specific and detailed information of the project, Click below the powerpoint file which is made in Korean.
 <br>
-Music store powerpoint >> [Download](/assets/download/blog/portfolio/musicstore/musicstore.pptx)
-<br>
 And I put the website link in [Here](http://itproject.ezenac.co.kr/musicstore/). You could visit the website if the website is not expired.
+
+<br>
+**Music store powerpoint >> [Download](/assets/download/blog/portfolio/musicstore/musicstore.pptx)**
+
+
+
+<br>

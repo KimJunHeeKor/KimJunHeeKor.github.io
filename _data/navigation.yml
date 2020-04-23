@@ -2,6 +2,8 @@
 main:
   - title: "About me"
     url: /about
+  - title: Portfolio
+    url : /portfolio/
   - title: "Study Languages"
     url : /categories/
     children:
@@ -9,8 +11,6 @@ main:
         url : /categories/python/
       - title : "React"
         url : /categories/React/
-  - title: Portfolio
-    url : /portfolio/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
