@@ -31,7 +31,7 @@ gallery:
 ---
 
 # 1. Abstract
-The pupose of this project is making web site to sell music albums. The webpage has features like other common shopping website such as login, logout, displayment items, purchasing the items, etc. But, this website show recommend items through several processing data. You will find the recommend side in the website if you visit it.
+The purpose of this project is making web site to sell music albums. The webpage has features like other common shopping website such as login, logout, displayment items, purchasing the items, etc. But, this website show recommend items through several processing data. You will find the recommend side in the website if you visit it.
 
 <br>
 
