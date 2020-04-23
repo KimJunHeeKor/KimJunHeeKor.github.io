@@ -27,44 +27,41 @@ gallery:
   - image_path: /assets/Images/blog_main/musicstore/content5.png
     alt: "Card payment"
   - image_path: /assets/Images/blog_main/musicstore/content6.png
-    alt: "Purchase success page"
-  - image_path: /assets/Images/blog_main/musicstore/content7.png
-    alt: "Purchase success page"
-  - image_path: /assets/Images/blog_main/musicstore/content8.png
-    alt: "Purchase success page"
+    alt: "Admin cart page"
 ---
 
-A store for selling music albums.
+# 1. Abstract
+The pupose of this project is making web site to sell music albums. The webpage has features like other common shopping website such as login, logout, displayment items, purchasing the items, etc. But, this website show recommend items through several processing data. You will find the recommend side in the website if you visit it.
 
-<br><br>
+<br>
 
-# Project Period
+# 2. Project Period
 
 - From 2019. 11. to 2020. 04.
 
 <br><br>
 
-# Project Member
+# 3. Project Member
 
 - Kim MinSeon, Kim JunHee, Ryu SiMyeong, Yang MinGyu, Yun JeongYeon
 
 <br><br>
 
-# development environment
+# 4. Development environment
 
-## Front-End
+## 1) Front-End
 
 - HTML5, CSS3, Javascript, jQuery, Bootstrap, (Ajax)
 
-## Back-End
+## 2) Back-End
 
 - JAVA, MySQL, Spring, JSTL
 
-## Web Application Server
+## 3) Web Application Server
 
 - Apache tomcat 8.0
 
-## Tools
+## 4) Tools
 
 - eclipse, lombok, github(For team project)
 
@@ -72,22 +69,22 @@ A store for selling music albums.
 
 
 
-{% include gallery caption="show my parts in the project from top-left to bottom-right.<br> top-left) Main Homepage &nbsp;&nbsp; top-middle) Cart page &nbsp;&nbsp; top-right) Favorite page<br>middle-left) Purchasing process page&nbsp;&nbsp; middle-middle) Card payment &nbsp;&nbsp; middle-right) Purchase success page" %}
+{% include gallery caption="show my parts in the project.<br> top-left) Main Homepage &nbsp;&nbsp;&nbsp;&nbsp; top-middle) Cart page &nbsp;&nbsp;&nbsp;&nbsp; top-right) Favorite page<br>bottom-left) Purchasing process page&nbsp;&nbsp;&nbsp;&nbsp; bottom-middle) Card payment &nbsp;&nbsp;&nbsp;&nbsp; bottom-right) Admin cart page" %}
 
 
 
-# What was charged in?
+# 5. What was charged in?
 
-## 1. Main page
+## 1) Main page
 
 - Page design
 - Effect of carousel by jQuery with data from Database
 - Applying processed data by scheduler in spring framework
 - Display albums by data from DB
 
-## 2. Shopping pages
+## 2) Shopping pages
 
-### 1) Cart page & Favorite page
+### #1 Cart page & Favorite page
 
 - Page design
 - Display albums by data from DB
@@ -95,7 +92,7 @@ A store for selling music albums.
 - Data processing by Ajax
 
 
-### 2) Purchase process page, Purchase success & fail pages
+### #2 Purchase process page, Purchase success & fail pages
 
 - Page design
 - Applying address search API(Application Programming Interface), payment API for card and mobile (It is not real payment.)
@@ -103,12 +100,12 @@ A store for selling music albums.
 - Applying validation of entry information
 - Data processing by Ajax
 
-## 3. Pie Plot at Favorite chart page
+## 3) Pie Plot at Favorite chart page
 
 - Applying farovite genre plot of national, of aborad, and of all by processing data from Database
 - Data processing by Ajax
 
-## 4. Admin cart page
+## 4) Admin cart page
 
 - For editing data, Call data by SQL from Database
 - Featuring CRUD(Create, Read, Update, Delete)
