@@ -66,7 +66,7 @@ The purpose of this project is making web site to sell music albums. The webpage
 
 ## 3) Web Application Server
 
-- Apache tomcat 8.0
+- Apache tomcat 8.5
 
 ## 4) Tools
 
