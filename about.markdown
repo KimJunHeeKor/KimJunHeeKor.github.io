@@ -3,6 +3,8 @@ layout: archive
 title: Who is JunHee?
 permalink: /about/
 author_profile: true
+sidebar:
+    nav: "main"
 ---
 
 <br>
