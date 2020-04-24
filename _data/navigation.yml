@@ -13,6 +13,8 @@ main:
         url : /categories/React/
       - title : "java"
         url : /categories/java/
+      - title: "Node.js"
+        url: /categories/Node.js/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
