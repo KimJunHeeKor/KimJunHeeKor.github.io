@@ -7,14 +7,14 @@ main:
   - title: "Study Languages"
     url : /categories/
     children:
-      - title : "python"
-        url : /categories/python/
-      - title : "React"
-        url : /categories/React/
       - title : "java"
         url : /categories/java/
       - title: "Node.js"
         url: /categories/Node.js/
+      - title : "python"
+        url : /categories/python/
+      - title : "React"
+        url : /categories/React/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
