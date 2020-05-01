@@ -16,7 +16,7 @@ main:
       - title : "React"
         url : /categories/React/
       - title : "C#"
-        url : /categories/C#/
+        url : /categories/Csharp/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
