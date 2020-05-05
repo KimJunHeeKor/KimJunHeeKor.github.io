@@ -1,5 +1,5 @@
 ---
-title:  "[파이썬] 실전 엑셀 데이터 - 데이터 수집(4)"
+title:  "[파이썬] HTTP 통신 - 데이터 수집(4)"
 date: 2020-05-03
 categories: [python]
 ---
