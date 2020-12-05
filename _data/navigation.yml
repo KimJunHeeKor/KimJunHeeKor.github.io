@@ -4,7 +4,7 @@ main:
     url: /about
   - title: Portfolio
     url : /portfolio/
-  - title: "Study Languages"
+  - title: "My Study"
     url : /categories/
     children:
       - title : "java"
@@ -17,6 +17,8 @@ main:
         url : /categories/React/
       - title : "C#"
         url : /categories/Csharp/
+      - title : "정보처리기사"
+        url : /categories/Info/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
