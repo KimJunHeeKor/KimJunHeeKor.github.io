@@ -20,7 +20,7 @@ published : true
 
 ## 2. XP 개발 프로세스
 
-![XP 개발 프로세스](/assets/Images/Info/chapter3/chapter3-1.jpg)
+![XP 개발 프로세스](/assets/Images/Info/chapter3/chapter3-1.JPG)
 
 - 스파이크 : 요구사항의 신뢰성을 높이고 기술 문제에 대한 위험을 감소시키기 위해 별도로 만드는 간단한 프로그램
 <br>
