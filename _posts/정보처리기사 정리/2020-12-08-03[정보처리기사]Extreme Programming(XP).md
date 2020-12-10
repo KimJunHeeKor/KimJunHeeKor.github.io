@@ -1,5 +1,5 @@
 ---
-title:  "[정보처리기사] eXtreme Programming(XP)"
+title:  "[정보처리기사] 003. eXtreme Programming(XP)"
 date: 2020-12-08
 categories: ['정보처리기사']
 published : true
