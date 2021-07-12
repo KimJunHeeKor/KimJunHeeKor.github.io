@@ -34,9 +34,13 @@ For this goal, I am trying to understand basic for code such as assign memoery, 
 
 <h2 style="color:#FF3068;"> 2) Back-End</h2>
 
-- ***JAVA***
+- ***JAVA, C#, C++,***
     - Understanding abstract, interface, OOP(Object-oriented programming) concept
     - Making helper module by singleton pattern
+
+- ***Python***
+    - Coding by using numpy, pandas, matplot.pyplot libraries
+    - Modeling by pytorch, keras
 
 - ***MySQL***
     - Building of tables
@@ -179,9 +183,17 @@ For this goal, I am trying to understand basic for code such as assign memoery, 
 ### 2017. 06. - 2019. 08.
 
 - ***EMF Safety***
-    - Research and Development SAR measurement system
+    - Research and development SAR measurement system
     - Studying projects and test to get data for the projects
     - Measurement SAR with Uncertainty
+
+### 2020. 09. - now
+
+- ***ENCYC***
+    - Research and develop AI algorithm
+    - Implementation about AI code
+    - Adminstration of server
+    - Managment of projects
 
 
 <br><br>
