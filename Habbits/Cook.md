@@ -1,5 +1,5 @@
 ---
-layout: category
+layout: Habbits_category
 
 title: Cook
 ---
