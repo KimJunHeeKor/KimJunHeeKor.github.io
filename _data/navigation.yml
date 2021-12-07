@@ -19,6 +19,11 @@ main:
         url : /categories/Csharp/
       - title : "정보처리기사"
         url : /categories/Info/
+      - title : "취미"
+        url : /categories/Habbits
+        children:
+          - title : "Cook"
+            url : /categories/Cook
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"

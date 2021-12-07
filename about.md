@@ -40,7 +40,11 @@ For this goal, I am trying to understand basic for code such as assign memoery, 
 
 - ***Python***
     - Coding by using numpy, pandas, matplot.pyplot libraries
+    - Data preprocessing for machine learning
     - Modeling by pytorch, keras
+    - Deep Learning for classification of images by CNN
+    - Having knowledge of GAN(DCGAN, VAE, etc.)
+    - Implementation of API server by ``FLASK`` framework
 
 - ***MySQL***
     - Building of tables
@@ -180,13 +184,6 @@ For this goal, I am trying to understand basic for code such as assign memoery, 
 
 <h2 style="color:#FF3068;"> 3) Career </h2>
 
-### 2017. 06. - 2019. 08.
-
-- ***EMF Safety***
-    - Research and development SAR measurement system
-    - Studying projects and test to get data for the projects
-    - Measurement SAR with Uncertainty
-
 ### 2020. 09. - now
 
 - ***ENCYC***
@@ -195,6 +192,13 @@ For this goal, I am trying to understand basic for code such as assign memoery, 
     - Adminstration of server
     - Managment of projects
 
+
+### 2017. 06. - 2019. 08.
+
+- ***EMF Safety***
+    - Research and development SAR measurement system
+    - Studying projects and test to get data for the projects
+    - Measurement SAR with Uncertainty
 
 <br><br>
 
@@ -211,4 +215,3 @@ Graduated Dankook Univ.<br>
 
 Graduated Dankook Univ. <br>
 *Electronics-Electrical Engineering : Bachelor*
-
