@@ -9,11 +9,11 @@ sidebar:
 <!-- {{ content }}
 
 <div class="entries-{{ page.entries_layout }}">
-  {% include posts-category.html taxonomy=page.taxonomy type=page.entries_layout %}
+  {% include posts-habbits_category.html taxonomy=page.taxonomy type=page.entries_layout %}
 </div> -->
 
-{% assign Habbits_category = page.Habbits_category | default: page.title %}
-  {% for post in site.Habbits[Habbits_category] %}
+{% assign habbits_category = page.habbits_category | default: page.title %}
+  {% for post in site.habbits_categories[habbits_category] %}
     <div>
       {% include archive-single.html type=page.entries_layout %} <small>{{ post.date | date_to_string }}</small>           
     </div>

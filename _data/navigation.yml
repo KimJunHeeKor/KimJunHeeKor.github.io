@@ -20,10 +20,10 @@ main:
       - title : "정보처리기사"
         url : /categories/Info/
   - title : "Habbits"
-    url : /Habbits/
+    url : /habbits_categories/
     children:
       - title : "Cook"
-        url : /Habbits/Cook/
+        url : /habbits_categories/Cook/
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
