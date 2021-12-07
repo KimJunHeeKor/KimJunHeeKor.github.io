@@ -20,7 +20,7 @@ main:
       - title : "정보처리기사"
         url : /categories/Info/
       - title : "Cook"
-        url : /categories/Cook
+        url : /categories/Cook/
         
   #- title: "Quick-Start Guide"
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
