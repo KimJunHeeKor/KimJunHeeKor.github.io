@@ -19,7 +19,7 @@ main:
         url : /categories/Csharp/
       - title : "정보처리기사"
         url : /categories/Info/
-  - title : "취미"
+  - title : "Habbits"
     url : /Habbits/
     children:
       - title : "Cook"
