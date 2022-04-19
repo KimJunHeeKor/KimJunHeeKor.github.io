@@ -188,8 +188,15 @@ For this goal, I am trying to understand basic for code such as assign memoery, 
 
 - ***ENCYC***
     - Research and develop AI algorithm
+      - Image classification (Efficient net, Resnet, etc.)
+      - GAN (VAE, Cycle GAN, etc.)
+      - Reinforcement learning
     - Implementation about AI code
+      - Image classification by Efficient net
+      - Generated Images by GAN
     - Adminstration of server
+      - Main Server by Linux(Ubuntu)
+      - Service by AWS(Ubuntu)
     - Managment of projects
 
 
