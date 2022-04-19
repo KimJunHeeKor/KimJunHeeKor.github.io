@@ -187,18 +187,18 @@ For this goal, I am trying to understand basic for code such as assign memoery, 
 ### 2020. 09. - now
 
 - ***ENCYC***
-    - Research and develop AI algorithm
-      - Image classification (Efficient net, Resnet, etc.)
-      - GAN (VAE, Cycle GAN, etc.)
-      - Reinforcement learning
-    - Implementation about AI code
-      - Image classification by Efficient net
-      - Generated Images by GAN
-    - Adminstration of server
-      - Main Server by Linux(Ubuntu)
-      - Service by AWS(Ubuntu)
+    - Research and develop AI algorithm<br>
+      1. Image classification (Efficient net, Resnet, etc.)
+      2. GAN (VAE, Cycle GAN, etc.)
+      3. Reinforcement learning
+    - Implementation about AI code<br>
+      1. Image classification by Efficient net
+      2. Generated Images by GAN
+    - Adminstration of server<br>
+      1. Main Server by Linux(Ubuntu)
+      2. Service by AWS(Ubuntu)
     - Managment of projects
-
+<br>
 
 ### 2017. 06. - 2019. 08.
 
